@@ -6,5 +6,3 @@ const printSquare = (row, column) => {
         console.log(test)
     })
 }
-
-printSquare(2,3)
