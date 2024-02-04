@@ -23,4 +23,7 @@ const printSquare = (number) => {
   }
 }
 
-printSquare(4)
+
+const fs = require("fs");
+let rowNum = Number(fs.readFileSync(0).toString().trim());
+printSquare(rowNum);
