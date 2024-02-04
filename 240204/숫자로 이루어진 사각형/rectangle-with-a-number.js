@@ -8,9 +8,10 @@ const printSquare = (number) => {
       for(let j = 0; j < arrays[i].length; j++) {
         arrays[i][j] += sumNumber;
         
-        if(arrays[i][j] >= 10) {
+        if(arrays[i][j] === 10) {
           arrays[i][j] = arrays[i][j] % 10 + 1;
-          sumNumber = 1;
+          
+          sumNumber = 2;
           continue
         }
         
@@ -24,6 +25,7 @@ const printSquare = (number) => {
     console.log(result)
   }
 }
+
 
 const fs = require("fs");
 let rowNum = Number(fs.readFileSync(0).toString().trim());
