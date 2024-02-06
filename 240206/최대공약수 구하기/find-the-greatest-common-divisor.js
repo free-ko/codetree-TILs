@@ -7,7 +7,7 @@ const printGCD = (n, m) => {
     }
   }
   
-  console.log(result)
+    process.stdout.write(gcd + "\n");
 }
 
 const fs = require("fs");
