@@ -14,4 +14,4 @@ const fs = require("fs");
 let input = fs.readFileSync(0).toString().trim().split(" ");
 let [rowNum, colNum] = input.map(Number);
 
-printGCD(rowNum, colNum)
+console.log(printGCD(rowNum, colNum))
