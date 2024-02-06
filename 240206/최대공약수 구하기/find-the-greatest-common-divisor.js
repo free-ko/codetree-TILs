@@ -1,4 +1,5 @@
 const fs = require("fs");
+let [n, m] = fs.readFileSync(0).toString().trim().split(" ").map(Number);
 
 const printGCD = (n, m) => {
   let result = 0;
@@ -12,6 +13,5 @@ const printGCD = (n, m) => {
     process.stdout.write(gcd + "\n");
 }
 
-let [n, m] = fs.readFileSync(0).toString().trim().split(" ").map(Number);
 
 printGCD(n, m)
