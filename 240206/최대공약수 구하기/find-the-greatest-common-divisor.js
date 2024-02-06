@@ -7,11 +7,10 @@ const printGCD = (n, m) => {
     }
   }
   
-  return result;
+  console.log(result)
 }
 
 const fs = require("fs");
-let input = fs.readFileSync(0).toString().trim().split(" ");
-let [rowNum, colNum] = input.map(Number);
+let [n, m] = fs.readFileSync(0).toString().trim().split(" ").map(Number);
 
-console.log(printGCD(rowNum, colNum))
+printGCD(n, m)
