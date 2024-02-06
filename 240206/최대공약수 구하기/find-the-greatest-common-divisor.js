@@ -10,7 +10,7 @@ const printGCD = (n, m) => {
     }
   }
   
-    process.stdout.write(gcd + "\n");
+    process.stdout.write(result + "\n");
 }
 
 
